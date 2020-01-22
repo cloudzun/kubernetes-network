@@ -10,7 +10,7 @@ spec:
   selector:
     app: webapp1-clusterip
 ---
-apiVersion: apps/v1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: webapp1-clusterip-deployment
@@ -26,3 +26,4 @@ spec:
         image: katacoda/docker-http-server:latest
         ports:
         - containerPort: 80
+
